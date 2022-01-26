@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
     <title>Meu Contador</title>
     <style>
     *{
-        margin: 0;
+        margin: 10;
         box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
     }
 
     body {
         min-height: 100vh;
-        background: black;
+        background-color: black;
         color: white;
         display: grid;
         place-items: center;
-        border-radius: 5px;
+        border-radius: 10px;
         text-align: center;
     }
     p{
@@ -44,16 +46,15 @@
 
        // alteradores de estados da aplicação
        function aumentar() {
-       numero = numero + 1
+       numero +=1
        mostrarNaTela()
     }
        function diminuir(){
-        numero = numero - 1
-   
+        numero -= 1
         mostrarNaTela()
     }
     function resetar(){
-    numero = numero =0
+    numero = 0
     mostrarNaTela()
     }
 
@@ -66,5 +67,5 @@
       // iniciar
       mostrarNaTela()
         </script>
-    </body>
+    </body> 
 </html>
